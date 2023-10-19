@@ -1,0 +1,463 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Rosa Mystica</title>
+  <style>
+    /* Reset default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe Script", cursive;
+      line-height: 1.5;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul.left li {
+      margin-right: 10px;
+    }
+
+    nav ul.right li {
+      margin-left: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #ff9800;
+    }
+
+    section.hero {
+		 background-image:url('back.jpg');
+      background-color:#de3d54;
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+	  .rig{
+	  background-color:#fe3390;
+     justify-content:space-evenly;
+	  border:solid;
+	  margin-left:289px;
+	  margin-top:;
+	  justify-content:space-evenly;
+	  margin-bottom:;
+	  
+	  }
+
+    section.hero h2 {
+      color: 6de355;
+		 font-family:bold,cursive;
+      font-size: 108px;
+      margin-bottom: 19px;
+    }
+
+    section.hero p {
+      color: #de3544;
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    a.cta {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff9800;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    section.body {
+      padding: 50px;
+		 background-color:#344444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+	    .nav-right{
+	  margin-left:300px;
+	  margin-top:10px;
+	  }
+	  .nav-left{
+	  margin-bottom:;
+	  }
+
+    .body-text {
+      max-width: 600px;
+      margin-right: 50px;
+    }
+
+    .body-text p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .image-container img {
+      width: 350px;
+      height: 350px;
+      border-radius: 15px;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: translateY(-20px);
+    }
+	  section.body-1{
+	  width:1000px;
+	  height:1000px;
+	  }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+	  .b{
+	    font-size:35px;
+		  font-family:italic;
+		 
+	  }
+        .pic-container {
+			  width:1000px;
+			  height:320px;
+            display: flex;
+            align-items: center;
+			   margin-top:20px;
+            gap: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 3px solid #ff69b4;
+            border-radius: 20px;
+            transition: background-color 0.9s;
+        }
+
+        .pic-container:hover {
+            background-color: #ff69b4; /* Pink highlight on hover */
+        }
+
+        .pic-text {
+            flex: 1; /* Take up remaining space */
+            color: #333;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+	  .pic-text ul{
+	   padding-left:20px;  
+	  
+	  
+	  }
+
+        .pic-image img {
+			   height:190px;
+			   width:280px;
+			  display: flex;
+			   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        	  transform: translateY(-20px);
+            max-width: 100%;
+			  background-image:url("natures gift.jpeg");
+            height: auto;
+            display: block;
+            border-radius: 55px;
+        }
+	  
+        .pic-container-1 {
+			  height:320px;
+			  width:1100px;
+			  margin-left:380px;
+			   margin-top:20px;
+			  border: solid #de3443;
+            display: flex;
+            align-items: center;
+			  
+            gap: 110px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border:2px solid #ff69b4;
+            border-radius: 20px;
+        }
+
+        .pic-container-1:hover .pic-text-1 {
+            transform: translateY(-10px); /* Slide the text up on hover */
+            transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+
+        .pic-text-1 {
+            flex: 1;
+            color: #333;
+            font-size: 18px;
+            line-height: 1.4;
+            transition: transform 0.3s ease-in-out; /* Add the same transition effect to the text */
+        }
+
+        .pic-image-1 {
+            max-width: 100px; /* Adjust the width of the image container as needed */
+        }
+  .pic-text-1 ul{
+	   padding-left:20px;
+	  }
+        .pic-image-1 img {
+             background-image:url("nurisher.jpeg");
+            height: 320px;
+			  BORDER:none;
+			  width:300px;
+			  margin-left:-200px;
+            display: inline;
+            border-radius: 55px;
+        }
+	   .pic-container-2 {
+			  width:1000px;
+			  height:320px;
+            display: flex;
+            align-items: center;
+			   margin-top:20px;
+            gap: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 3px solid #ff69b4;
+            border-radius: 20px;
+            transition: background-color 0.9s;
+        }
+
+        .pic-container-2:hover {
+            background-color: #ff69b4; /* Pink highlight on hover */
+        }
+
+        .pic-text-2 {
+            flex: 1; /* Take up remaining space */
+            color: #333;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+         
+	  .pic-text-2 ul{
+	   padding-left:20px;
+	  }
+        .pic-image-2 img {
+			   height:200px;
+			   width:300px;
+			  display: flex;
+			   
+        	  transform: translateY(-20px);
+            max-width: 100%;
+			  background-image:url("de-diafix2.jpeg");
+			  border:none;
+            height: auto;
+            display: block;
+            border-radius: 55px;
+        }
+	  
+	  .final-cont{
+	      width:100%;
+		  height:450px;
+		 display:flex;
+		  background-color:#5c8374;
+		 
+		  border:4px solid ;
+	  }
+	  .fin-1{
+	    width:600px;
+		  height:390px;
+		  justify-content:space-evenly;
+		  margin:10px;
+		  	padding-left:100px;
+		  border-radius:10px;
+		  display:flex;
+		  
+		
+	  }
+	  .fin-1 img{
+		width:400px;
+		height:200px;
+		display:flex;
+	
+	  border-radius:50px;
+	
+	  }
+	  .fin-1 h2 {
+	   font-size:100px;
+		  text-align:center;
+		 
+	  }
+	  .fin-text{
+		      display:flex;
+		      padding-top:300px;
+		      padding-right:200px;
+            color: #003366;
+		      text-align:center;
+            font-size: 20px;
+		      font-family:cursive,italic;
+            line-height: 1.4;
+	  }
+	 
+	  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rosa Mystica</h1>
+    <nav>
+      <ul class="left">
+          <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+      </ul>
+   
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>NRI</h2>
+	  
+    <p>Natures Renaissance International</p>
+    <a href="#" class="cta">Explore Our products</a>
+  </section>
+
+  <section class="body">
+    <div class="body-text">
+		 
+      <p>
+         <b> Welcome</b>   to Rosa Mystica, a NRI (Natures Renaissance International) product representatives. Our passion,focus and aim is to invite you all to a decreased health deformation generations.
+      </p>
+      <p>
+       we have all been looking for a natural way to heal ourselves,our family and friends .in order to spend more time with our families and  relatives,to eradicate the illness that have been tramitizing or loved ones. I wish to give a product that heals very fatal diseases and long term tramizing illiness.Rosa Mysitica companyherbs products is the solution we seek.
+      </p>
+      <p>
+         
+      </p>
+      <p>
+			Join us in celebrating the art of Nigerian made herbs,well tested and improved to suit your health needs. 	 
+      </p>
+    </div>
+    <div class="image-container">
+      <img src="nature.jpg" alt="Egusi Soup" />
+      <img src="logo.png" alt="Egusi Soup" />
+    </div>
+  </section>
+	<section class="body-1">
+		
+    <div class="pic-container">
+				  <div class="pic-text">
+					  <b>Health benefits</b>
+					<ul>
+					  <li>Cardiovascular Problems</li>
+						<li>Regulate blood pressure</li>
+						<li> High blood pressure</li>
+						<li>Treat partial paralysis and stroke</li>
+					  </ul>
+					  <p>the key ingredients:allium sativum,turmeric,ginseng and bilberry</p>
+				  </div>
+				  <div class="pic-image">
+						<img src="natures gift.jpeg" alt="" />
+				  </div>
+    </div>
+		<div class="pic-container-1">
+				  <div class="pic-text-1">
+										  <b>Health benefits</b>
+					<ul>
+					  <li>Diabetes and prediabetes</li>
+						<li>Rejuvenate the pancreas</li>
+						<li> Boost the production of insulin</li>
+						<li>Helps in the treatment of hypoglycemia</li>
+					  </ul>
+					  <p>the key ingredients:vernonia amygdaline,cucubita spp,ginetum africanum e.t.c</p>
+				  
+				  </div>
+				  <div class="pic-image-1">
+						<img src="de-diafix2.jpeg" alt="" />
+				  </div>
+    </div>
+		<div class="pic-container-2">
+				  <div class="pic-text-2">
+											  <b>Health benefits</b>
+					<ul>
+					  <li>Sperm boost</li>
+						<li>Weak erection</li>
+						<li> Hormonal imbalance</li>
+						<li>Quick elaculation</li>
+					  </ul>
+					  <p>the key ingredients:Drumstick,allium sativum,benegal gram e.t.c</p>
+				    </div>
+				  <div class="pic-image-2">
+						<img src="nurisher.jpeg" alt="" />
+				  </div>
+    </div>
+	</section>
+	<section>
+	   <div class="final-cont">
+			<div class="fin-1">
+                <h2 style="margin-left:250px;">vision</h2>
+                   <div class="fin-text">
+							
+							 
+				    gdhwbncekjcfhjiejhfn wjfhgrnkjfnedfkjfklvjeivefjivhfbdfhbwrifhjdf ufjv bfuhbj hfbefubfhbfjbdvkfbvdfu f
+						    
+			          </div>
+			 </div>
+					 <div class="fin-1">
+                  
+						  
+					</div>
+					 <div class="fin-1">
+                  			  <h2>vision</h2>
+						   <div class="fin-text">
+	
+				    gdhwbncekjcfhjiejhfn wjfhgrnkjfnedfkjfklvjeivefjivhfbdfhbwrifhjdf ufjv bfuhbj hfbefubfhbfjbdvkfbvdfu f
+						    
+			  
+						    </div>
+					</div>
+		
+		</div>
+	
+	
+	
+	</section>
+	
+
+  <footer>
+    &copy; 2023 Nigerian Soups. All rights reserved. | Designed by Your Name
+  </footer>
+</body>
+</html>
